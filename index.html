@@ -1,0 +1,192 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="theme-color" content="#f8f4ed">
+  <meta name="description" content="Fátima Yarlequé Juarez y Humberto Gómez García te invitan a compartir su matrimonio el sábado 28 de noviembre de 2026 en Piura.">
+  <title>Fátima &amp; Humberto · Nuestra boda</title>
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500;1,600&family=DM+Sans:wght@400;500;600;700&family=Great+Vibes&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <script src="config.js" defer></script>
+  <script src="app.js" defer></script>
+</head>
+<body class="locked">
+  <a class="skip-link" href="#inicio">Ir a la invitación</a>
+  <div id="petalLayer" class="petal-layer" aria-hidden="true"></div>
+
+  <div id="opening" class="opening" role="dialog" aria-modal="true" aria-label="Carta de invitación de Fátima y Humberto">
+    <img class="opening-flower tl" src="assets/flor-esquina-superior-izquierda.webp" alt="" aria-hidden="true">
+    <img class="opening-flower tr" src="assets/flor-esquina-superior-derecha.webp" alt="" aria-hidden="true">
+    <img class="opening-flower bl" src="assets/flor-esquina-inferior-izquierda.webp" alt="" aria-hidden="true">
+    <img class="opening-flower br" src="assets/flor-esquina-inferior-derecha.webp" alt="" aria-hidden="true">
+    <div class="opening-inner">
+      <p class="eyebrow">UNA INVITACIÓN ESPECIAL</p>
+      <p class="opening-script">¡Nos casamos!</p>
+      <h1>Fátima <span>&amp;</span> Humberto</h1>
+      <button id="letterButton" class="letter-button" type="button" aria-label="Abrir la carta e invitación de matrimonio">
+        <img class="letter-image" src="assets/sobre-acuarela.webp" alt="Sobre de acuarela con sello de corazón y colibrí" width="882" height="719">
+        <span class="letter-shine" aria-hidden="true"></span>
+      </button>
+      <p class="opening-date">SÁBADO · 28 DE NOVIEMBRE DE 2026</p>
+      <button id="openInvite" class="open-cta" type="button">Abrir nuestra invitación <span aria-hidden="true">♡</span></button>
+      <p class="opening-hint">Toca la carta para descubrir nuestro gran día</p>
+    </div>
+  </div>
+
+  <div class="audio-pill" id="audioPill" hidden>
+    <span class="audio-glyph" aria-hidden="true">♫</span>
+    <span class="audio-info"><b>Hasta mi final</b><small>IL DIVO</small></span>
+    <button id="audioToggle" type="button" aria-label="Reproducir música" title="Reproducir música">▶</button>
+  </div>
+  <audio id="weddingAudio" preload="auto" loop playsinline webkit-playsinline>
+    <source src="assets/hasta-mi-final-il-divo.mp3" type="audio/mpeg">
+  </audio>
+  <div id="toast" class="toast" role="status" aria-live="polite"></div>
+
+  <header class="header">
+    <a class="header-logo" href="#inicio" aria-label="Volver al inicio">F <em>&amp;</em> H</a>
+    <nav aria-label="Navegación principal">
+      <a href="#historia">Nuestra historia</a>
+      <a href="#momentos">Momentos</a>
+      <a href="#fecha">El gran día</a>
+      <a href="#ceremonia">Ceremonia</a>
+      <a href="#recepcion">Recepción</a>
+    </nav>
+  </header>
+
+  <main id="inicio">
+    <section class="hero" aria-labelledby="heroTitle">
+      <span class="hero-halo" aria-hidden="true"></span>
+      <div class="floral-hero tl" aria-hidden="true"><img src="assets/flor-esquina-superior-izquierda.webp" alt=""></div>
+      <div class="floral-hero br" aria-hidden="true"><img src="assets/flor-esquina-inferior-derecha.webp" alt=""></div>
+      <div class="container hero-grid">
+        <div class="hero-copy reveal">
+          <p class="eyebrow">CON LA BENDICIÓN DE DIOS</p>
+          <h2 class="hero-intro" id="heroTitle">Nuestro <em>para siempre</em> comienza aquí.</h2>
+          <span class="gold-line" aria-hidden="true"></span>
+          <p class="hero-small">DOS HISTORIAS, UN MISMO DESTINO</p>
+          <h3 class="hero-names">Fátima <span>&amp;</span><br> Humberto</h3>
+          <p class="fullnames"><span id="fullName1">FÁTIMA YARLEQUÉ JUAREZ</span><br><span id="fullName2">HUMBERTO GÓMEZ GARCÍA</span></p>
+          <p class="hero-date">SÁBADO 28 DE NOVIEMBRE DE 2026</p>
+          <p class="hero-time">6:30 P. M. · PIURA, PERÚ</p>
+          <a class="subtle-link" href="#historia">DESCUBRE NUESTRA INVITACIÓN <span aria-hidden="true">↓</span></a>
+        </div>
+        <figure class="hero-photo reveal delay-1">
+          <img src="assets/portada-pareja.webp" alt="Ilustración de Fátima con vestido marfil y Humberto con traje azul entre flores y velas" width="1086" height="1448" fetchpriority="high">
+          <figcaption>FÁTIMA <span>&amp;</span> HUMBERTO · 28.11.26</figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <section class="story section-pad" id="historia" aria-labelledby="storyTitle">
+      <div class="section-flower story-top" aria-hidden="true"><img src="assets/flor-esquina-superior-derecha.webp" alt=""></div>
+      <div class="container story-grid">
+        <aside class="story-aside reveal">
+          <p class="section-number">NUESTRA HISTORIA</p>
+          <div class="story-star" aria-hidden="true">✧</div>
+          <p>Hay instantes que transforman una vida, y uno de ellos está por llegar.</p>
+        </aside>
+        <div class="story-content reveal delay-1">
+          <p class="eyebrow muted">DOS VIDAS, UN MISMO CAMINO</p>
+          <h2 class="big-title" id="storyTitle">El amor nos reunió. <em>La vida nos une.</em></h2>
+          <span class="gold-line" aria-hidden="true"></span>
+          <p class="story-paragraph" id="storyMessage">Con el corazón lleno de alegría queremos invitarte a compartir el día en que uniremos nuestras vidas ante Dios. Tu presencia hará este momento aún más especial.</p>
+          <p class="signature">Con cariño, <strong>Fátima &amp; Humberto</strong></p>
+        </div>
+      </div>
+    </section>
+
+    <section class="chapters section-pad" id="momentos" aria-labelledby="chaptersTitle">
+      <div class="section-flower chapters-left" aria-hidden="true"><img src="assets/flor-esquina-inferior-izquierda.webp" alt=""></div>
+      <div class="container">
+        <div class="chapters-heading reveal">
+          <p class="section-number">MOMENTOS COMPARTIDOS</p>
+          <p class="eyebrow muted">LOS CAPÍTULOS DE NUESTRO AMOR</p>
+          <h2 class="big-title" id="chaptersTitle">Una historia hecha de <em>pequeños grandes momentos.</em></h2>
+          <p>Hay historias que no necesitan grandes palabras. A veces, solo basta una mirada, una conversación y la alegría de caminar juntos.</p>
+        </div>
+        <img class="garland" src="assets/guirnalda-central.webp" alt="" aria-hidden="true" loading="lazy">
+        <article class="chapter reveal">
+          <figure class="chapter-image"><img src="assets/encuentro-cafe.webp" alt="Fátima y Humberto compartiendo una conversación en un café romántico" width="1024" height="1536" loading="lazy"><figcaption>UNA MIRADA</figcaption></figure>
+          <div class="chapter-copy"><span class="chapter-star" aria-hidden="true">✧</span><h3>La magia de <em>encontrarnos</em></h3><p>Hay encuentros que hacen que todo se sienta diferente. Desde entonces, las sonrisas tienen un significado especial.</p><span class="chapter-rule"></span></div>
+        </article>
+        <article class="chapter reverse reveal">
+          <figure class="chapter-image"><img src="assets/camino-ciudad.webp" alt="La pareja caminando de la mano por una calle iluminada entre flores" width="1122" height="1402" loading="lazy"><figcaption>CADA PASO</figcaption></figure>
+          <div class="chapter-copy"><span class="chapter-star" aria-hidden="true">✧</span><h3>De la mano, <em>cada día</em></h3><p>Entre paseos, conversaciones y sueños, aprendimos que el mejor lugar siempre es aquel en el que estamos juntos.</p><span class="chapter-rule"></span></div>
+        </article>
+        <article class="chapter reveal">
+          <figure class="chapter-image"><img src="assets/miradas-promesa.webp" alt="Fátima y Humberto mirándose con ternura bajo un arco floral" width="1024" height="1536" loading="lazy"><figcaption>UNA PROMESA</figcaption></figure>
+          <div class="chapter-copy"><span class="chapter-star" aria-hidden="true">✧</span><h3>Elegirnos <em>para siempre</em></h3><p>Lo más bonito de nuestra historia es saber que aún quedan muchas páginas por escribir. Y queremos comenzar la siguiente contigo.</p><span class="chapter-rule"></span></div>
+        </article>
+      </div>
+    </section>
+
+    <section class="vows" aria-label="Nuestra promesa">
+      <div class="container vows-grid">
+        <figure class="vows-image reveal"><img src="assets/alianzas-flores.webp" alt="Alianzas entre flores marfil y velas cálidas" width="1122" height="1402" loading="lazy"></figure>
+        <div class="vows-copy reveal delay-1"><p class="eyebrow">UN MISMO SUEÑO</p><p class="vows-symbol" aria-hidden="true">❦</p><blockquote>«Y entre todos los caminos, elegimos recorrer el nuestro juntos».</blockquote><p class="vows-signature">Fátima <span>&amp;</span> Humberto</p></div>
+      </div>
+    </section>
+
+    <section class="date-section section-pad" id="fecha" aria-labelledby="dateTitle">
+      <img class="section-vertical-bouquet" src="assets/ramo-vertical.webp" alt="" aria-hidden="true" loading="lazy">
+      <div class="container date-grid">
+        <div class="date-left reveal">
+          <p class="section-number">EL GRAN DÍA</p>
+          <p class="eyebrow muted">UNA FECHA PARA RECORDAR</p>
+          <h2 class="big-title" id="dateTitle">Nuestro «sí, acepto» <em>está muy cerca.</em></h2>
+          <div class="date-mark"><span>SÁBADO</span><b>28</b><span>NOVIEMBRE · 2026</span></div>
+          <div class="count-block" aria-label="Cuenta regresiva hasta el matrimonio">
+            <p class="count-caption">CONTANDO LOS DÍAS PARA NUESTRO «SÍ, ACEPTO»</p>
+            <div class="countdown" id="countdown">
+              <div><strong id="days">000</strong><span>DÍAS</span></div><i>/</i>
+              <div><strong id="hours">00</strong><span>HORAS</span></div><i>/</i>
+              <div><strong id="minutes">00</strong><span>MINUTOS</span></div><i>/</i>
+              <div><strong id="seconds">00</strong><span>SEGUNDOS</span></div>
+            </div>
+            <button type="button" class="subtle-link calendar-link" id="calendarButton">AGREGAR A MI CALENDARIO <span aria-hidden="true">↗</span></button>
+          </div>
+        </div>
+        <figure class="date-right reveal delay-1"><img src="assets/guirnalda-lateral.webp" alt="Flores crema y azul de acuarela" loading="lazy" class="date-floral"><img src="assets/alianzas-flores.webp" alt="Anillos de boda y flores de color crema" class="date-picture" loading="lazy"><figcaption>28 · 11 · 2026 <em>♡</em></figcaption></figure>
+      </div>
+    </section>
+
+    <section class="venues section-pad" id="ceremonia" aria-labelledby="venueTitle">
+      <div class="container">
+        <div class="venues-head reveal"><p class="section-number">DÓNDE CELEBRAREMOS</p><p class="eyebrow muted">TE ESPERAMOS CON CARIÑO</p><h2 class="big-title" id="venueTitle">Dos lugares, <em>un día inolvidable.</em></h2></div>
+        <div class="venues-grid">
+          <div class="venue venue-church reveal">
+            <span class="venue-ornament" aria-hidden="true">✧</span><p class="eyebrow">CEREMONIA RELIGIOSA</p>
+            <h3 id="ceremonyPlace">Iglesia de López Albújar</h3>
+            <p class="venue-sub" id="ceremonyReference">Sagrados Corazones de Jesús y de María</p>
+            <span class="venue-line"></span>
+            <dl><div><dt>DÍA</dt><dd>Sábado 28 de noviembre de 2026</dd></div><div><dt>HORA</dt><dd id="ceremonyTime">6:30 p. m.</dd></div><div><dt>CIUDAD</dt><dd>Piura, Perú</dd></div></dl>
+            <a id="churchMap" class="map-link" href="https://maps.app.goo.gl/p25riGV83rjwDu459" target="_blank" rel="noopener noreferrer">VER UBICACIÓN <span aria-hidden="true">↗</span></a>
+          </div>
+          <div class="venue venue-reception reveal delay-1" id="recepcion">
+            <span class="venue-ornament" aria-hidden="true">❦</span><p class="eyebrow">RECEPCIÓN</p>
+            <h3>La celebración <em>continúa.</em></h3>
+            <p class="venue-sub">Después de compartir nuestra promesa, nos alegrará seguir celebrando contigo.</p>
+            <span class="venue-line"></span>
+            <p class="address-label">DIRECCIÓN DE LA RECEPCIÓN</p>
+            <address id="receptionAddress">Calle Merino Vigil, Mz. E, Lote 11, AA. HH. San Martín</address>
+            <a id="receptionMap" class="map-link" href="https://www.google.com/maps/search/?api=1&amp;query=Calle%20Merino%20Vigil%20Mz%20E%20Lote%2011%20AA.HH%20San%20Mart%C3%ADn%20Piura%20Per%C3%BA" target="_blank" rel="noopener noreferrer">BUSCAR DIRECCIÓN <span aria-hidden="true">↗</span></a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="closing section-pad" id="final" aria-labelledby="closingTitle">
+      <div class="container closing-grid">
+        <figure class="closing-picture reveal"><img src="assets/palomas-simbolo.webp" alt="Dos palomas blancas y alianzas, símbolo de unión" width="414" height="414" loading="lazy"></figure>
+        <div class="closing-copy reveal delay-1"><p class="eyebrow muted">CON TODO NUESTRO AMOR</p><h2 class="closing-title" id="closingTitle">Gracias por ser parte <em>de nuestra historia</em></h2><p id="closingMessage">Compartir este momento contigo será un regalo inolvidable. Gracias por acompañarnos en este día tan especial.</p><div class="closing-names">Fátima <span>&amp;</span> Humberto</div><button id="shareButton" class="subtle-link share-link" type="button">COMPARTIR ESTA INVITACIÓN <span aria-hidden="true">↗</span></button></div>
+      </div>
+    </section>
+  </main>
+  <footer class="footer"><span>F <em>&amp;</em> H</span><small>28 DE NOVIEMBRE DE 2026</small><small>HECHO CON AMOR</small></footer>
+</body>
+</html>
